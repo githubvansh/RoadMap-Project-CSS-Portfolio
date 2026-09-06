@@ -1,0 +1,313 @@
+/* ====================
+   RESET
+==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+
+/* ====================
+   HEADER
+==================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 5%;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.logo-box {
+    width: 20px;
+    height: 20px;
+
+    background-color: black;
+}
+
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ====================
+   HERO
+==================== */
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    color: gray;
+}
+
+
+/* ====================
+   INFORMATION SECTION
+==================== */
+
+.information {
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr 1.3fr;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.projects,
+.experience,
+.education {
+    padding: 30px;
+
+    min-height: 400px;
+}
+
+
+.projects,
+.experience {
+    border-right: 1px solid black;
+}
+
+
+.information h2 {
+    margin-bottom: 30px;
+}
+
+
+/* PROJECTS */
+
+.project-list p {
+    padding: 15px 0;
+
+    border-bottom: 1px solid black;
+}
+
+
+.project-list p:last-child {
+    border-bottom: none;
+}
+
+
+/* EXPERIENCE */
+
+.experience-box {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid black;
+}
+
+
+.experience-box:last-child {
+    border-bottom: none;
+}
+
+
+.small-text {
+    margin-bottom: 10px;
+
+    color: gray;
+}
+
+
+.experience-box h3 {
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.experience a {
+    color: blue;
+
+    text-decoration: none;
+}
+
+
+/* EDUCATION */
+
+.education p {
+    margin-bottom: 20px;
+
+    line-height: 1.6;
+}
+
+
+.education ul {
+    padding-left: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* ====================
+   REVIEWS
+==================== */
+
+.reviews {
+    padding: 60px 5%;
+}
+
+
+.reviews h2 {
+    margin-bottom: 40px;
+}
+
+
+.review-container {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.review-card {
+    flex: 1;
+
+    border: 1px solid black;
+
+    border-radius: 20px;
+
+    padding: 25px;
+}
+
+
+.review-card p {
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+}
+
+
+.review-author {
+    display: flex;
+
+    flex-direction: column;
+
+    color: gray;
+}
+
+
+/* ====================
+   FOOTER
+==================== */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+/* ====================
+   MOBILE
+==================== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        flex-direction: column;
+
+        gap: 25px;
+
+        padding: 25px 20px;
+    }
+
+
+    nav {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    /* INFORMATION */
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+
+    .projects,
+    .experience {
+        border-right: none;
+
+        border-bottom: 1px solid black;
+    }
+
+
+    .projects,
+    .experience,
+    .education {
+        min-height: auto;
+    }
+
+
+    /* REVIEWS */
+
+    .review-container {
+        flex-direction: column;
+    }
+
+
+    .reviews {
+        padding: 50px 20px;
+    }
+
+}
